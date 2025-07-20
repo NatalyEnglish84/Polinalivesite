@@ -12,91 +12,107 @@
       padding: 0;
       color: #333;
     }
+
     header {
       text-align: center;
       padding: 40px 20px;
       background: rgba(255, 240, 250, 0.8);
     }
+
     header h1 {
       font-size: 3em;
       color: #e91e63;
-      text-shadow: 2px 2px #000, -2px -2px #ff69b4;
+      text-shadow: 2px 2px 2px #000, -2px -2px #ff69b4;
+      animation: popIn 1s ease-out forwards;
+      opacity: 0;
     }
+
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+
     header img {
-      width: 100px;
-      height: auto;
-      margin: 10px 0;
+      width: 150px;
+      margin: 20px 0;
     }
+
     header p {
       font-size: 1.2em;
-      margin: 10px 0;
     }
+
     nav {
+      background: #ffccdd;
+      padding: 10px 0;
       text-align: center;
       margin-top: 10px;
     }
+
     nav a {
-      margin: 0 10px;
+      color: #d6006d;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
-      color: #000;
     }
+
     section {
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.8);
       margin: 20px auto;
       padding: 20px;
-      width: 90%;
       max-width: 800px;
       border-radius: 10px;
     }
+
     h2 {
-      border-bottom: 2px solid #e91e63;
-      padding-bottom: 5px;
+      color: #d6006d;
     }
+
     video {
       width: 100%;
-      margin: 10px 0;
-      border: 2px solid #ccc;
       border-radius: 10px;
+      margin-top: 10px;
     }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
+
+    p {
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>#ПолинаLive</h1>
-    <img src="logotip.png" alt="Полина Live логотип" />
+    <img src="logotip.png" alt="Логотип Полина Live" />
     <p>Полина поёт, танцует и вдохновляет!</p>
-    <img src="photo.jpg" alt="Полина" width="120" />
-    <nav>
-      <a href="#vocal">Вокал</a>
-      <a href="#dance">Танцы</a>
-      <a href="#diploma">Дипломы</a>
-      <a href="#photo">Фото с Полиной</a>
-      <a href="#video">Видео</a>
-      <a href="#about">О себе</a>
-    </nav>
+    <img src="photo.jpg" alt="Полина" width="200" />
   </header>
+
+  <nav>
+    <a href="#vocal">Вокал</a>
+    <a href="#dance">Танцы</a>
+    <a href="#diplomas">Дипломы</a>
+    <a href="#photos">Фото с Полиной</a>
+    <a href="#videos">Видео</a>
+    <a href="#about">О себе</a>
+  </nav>
 
   <section id="vocal">
     <h2>?? Вокал</h2>
     <p>Полина — талантливая вокалистка, которая с душой исполняет каждую песню.</p>
     <video src="polina.mp4" controls></video>
-    <p>Выступление в Абакане, июнь 2023</p>
+    <p>Выступление в Абхазии, июнь 2025</p>
     <video src="polina1.mp4" controls></video>
-    <p>Выступление на конкурсе в г. Омск</p>
+    <p>Выступление на конкурсе в г. Сочи</p>
   </section>
 
   <section id="dance">
     <h2>?? Танцы</h2>
     <p>Полина с увлечением занимается в коллективе City Dance.</p>
     <video src="polina2.mp4" controls></video>
-    <p>Танец: фестиваль</p>
+    <p>Танец с фестиваля</p>
     <video src="polina3.mp4" controls></video>
-    <p>Танец: "Грани искусства"</p>
+    <p>Танец из репетиции</p>
     <video src="polina4.mp4" controls></video>
     <p>Выступление на концерте</p>
   </section>
