@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>#РџРѕР»РёРЅР°Live</title>
+  <title>#ПолинаLive</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -22,110 +21,86 @@
       font-size: 3em;
       color: #e91e63;
       text-shadow: 2px 2px #000, -2px -2px #ff69b4;
-      animation: popIn 1s ease-out forwards;
-      opacity: 0;
     }
-    @keyframes popIn {
-      0% { opacity: 0; transform: scale(0.5); }
-      100% { opacity: 1; transform: scale(1); }
+    header img {
+      width: 100px;
+      height: auto;
+      margin: 10px 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0;
     }
     nav {
-      background: rgba(255, 192, 203, 0.9);
-      padding: 10px;
       text-align: center;
+      margin-top: 10px;
     }
     nav a {
-      margin: 0 15px;
+      margin: 0 10px;
       text-decoration: none;
-      color: #000;
       font-weight: bold;
+      color: #000;
     }
-    .section {
-      max-width: 900px;
+    section {
+      background: rgba(255, 255, 255, 0.85);
       margin: 20px auto;
       padding: 20px;
-      background: rgba(255,255,255,0.9);
+      width: 90%;
+      max-width: 800px;
       border-radius: 10px;
     }
-    .gallery img, .gallery video {
+    h2 {
+      border-bottom: 2px solid #e91e63;
+      padding-bottom: 5px;
+    }
+    video {
+      width: 100%;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    img {
       max-width: 100%;
       border-radius: 10px;
-      margin: 10px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    figure {
-      margin: 0 0 20px 0;
-    }
-    figcaption {
-      font-size: 0.9em;
-      text-align: center;
-      color: #666;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>#ПолинаLive</h1>
+    <img src="logotip.png" alt="Полина Live логотип" />
+    <p>Полина поёт, танцует и вдохновляет!</p>
+    <img src="photo.jpg" alt="Полина" width="120" />
+    <nav>
+      <a href="#vocal">Вокал</a>
+      <a href="#dance">Танцы</a>
+      <a href="#diploma">Дипломы</a>
+      <a href="#photo">Фото с Полиной</a>
+      <a href="#video">Видео</a>
+      <a href="#about">О себе</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>#РџРѕР»РёРЅР°Live</h1>
-  <div>
-    <img src="logotip.png" alt="Р›РѕРіРѕС‚РёРї РџРѕР»РёРЅС‹" style="width:180px; border-radius: 8px;" />
-  </div>
-  <p>РџРѕР»РёРЅР° РїРѕС‘С‚, С‚Р°РЅС†СѓРµС‚ Рё РІРґРѕС…РЅРѕРІР»СЏРµС‚!</p>
-  <img src="photo.jpg" alt="РџРѕР»РёРЅР°" style="width:180px; border-radius: 12px; margin-top: 15px;" />
-</header>
+  <section id="vocal">
+    <h2>?? Вокал</h2>
+    <p>Полина — талантливая вокалистка, которая с душой исполняет каждую песню.</p>
+    <video src="polina.mp4" controls></video>
+    <p>Выступление в Абакане, июнь 2023</p>
+    <video src="polina1.mp4" controls></video>
+    <p>Выступление на конкурсе в г. Омск</p>
+  </section>
 
-<nav>
-  <a href="#vocal">Р’РѕРєР°Р»</a>
-  <a href="#dance">РўР°РЅС†С‹</a>
-  <a href="#awards">Р”РёРїР»РѕРјС‹</a>
-  <a href="#photos">Р¤РѕС‚Рѕ СЃ РџРѕР»РёРЅРѕР№</a>
-  <a href="#video">Р’РёРґРµРѕ</a>
-  <a href="#about">Рћ СЃРµР±Рµ</a>
-</nav>
+  <section id="dance">
+    <h2>?? Танцы</h2>
+    <p>Полина с увлечением занимается в коллективе City Dance.</p>
+    <video src="polina2.mp4" controls></video>
+    <p>Танец: фестиваль</p>
+    <video src="polina3.mp4" controls></video>
+    <p>Танец: "Грани искусства"</p>
+    <video src="polina4.mp4" controls></video>
+    <p>Выступление на концерте</p>
+  </section>
 
-<div class="section" id="vocal">
-  <h2>рџЋ¤ Р’РѕРєР°Р»</h2>
-  <p>РџРѕР»РёРЅР° вЂ” С‚Р°Р»Р°РЅС‚Р»РёРІР°СЏ РІРѕРєР°Р»РёСЃС‚РєР°, РєРѕС‚РѕСЂР°СЏ СЃ РґСѓС€РѕР№ РёСЃРїРѕР»РЅСЏРµС‚ РєР°Р¶РґСѓСЋ РїРµСЃРЅСЋ.</p>
-  <div class="gallery">
-    <figure>
-      <video controls>
-        <source src="polina.mp4" type="video/mp4" />
-      </video>
-      <figcaption>Р’С‹СЃС‚СѓРїР»РµРЅРёРµ РІ РђР±С…Р°Р·РёРё, РёСЋР»СЊ 2025</figcaption>
-    </figure>
-    <figure>
-      <video controls>
-        <source src="polina1.mp4" type="video/mp4" />
-      </video>
-      <figcaption>Р’С‹СЃС‚СѓРїР»РµРЅРёРµ РЅР° РєРѕРЅРєСѓСЂСЃРµ РІ Рі. РћР·С‘СЂС‹</figcaption>
-    </figure>
-  </div>
-</div>
-
-<div class="section" id="dance">
-  <h2>рџ’ѓ РўР°РЅС†С‹</h2>
-  <p>РџРѕР»РёРЅР° СЃ СѓРІР»РµС‡РµРЅРёРµРј Р·Р°РЅРёРјР°РµС‚СЃСЏ РІ РєРѕР»Р»РµРєС‚РёРІРµ City Dance.</p>
-  <div class="gallery">
-    <figure>
-      <video controls>
-        <source src="polina2.mp4" type="video/mp4" />
-      </video>
-      <figcaption>РўР°РЅРµС† СЃ С„РµСЃС‚РёРІР°Р»СЏ</figcaption>
-    </figure>
-    <figure>
-      <video controls>
-        <source src="polina3.mp4" type="video/mp4" />
-      </video>
-      <figcaption>Р“СЂСѓРїРїРѕРІРѕРµ РІС‹СЃС‚СѓРїР»РµРЅРёРµ</figcaption>
-    </figure>
-    <figure>
-      <video controls>
-        <source src="polina4.mp4" type="video/mp4" />
-      </video>
-      <figcaption>Р¤РёРЅР°Р»СЊРЅС‹Р№ РЅРѕРјРµСЂ</figcaption>
-    </figure>
-  </div>
-</div>
-
+  <!-- Остальные разделы можно добавить позже -->
 </body>
 </html>
