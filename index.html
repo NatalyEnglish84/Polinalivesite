@@ -3,132 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>#ПолинаLive</title>
+  <title>Сайт Полины</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: #f7f7f7;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
       margin: 0;
-      padding: 0;
+      padding: 0 10px;
     }
     header {
-      background: #fff0f7;
+      text-align: center;
       padding: 20px;
-      text-align: center;
-    }
-    header img {
-      height: 80px;
-    }
-    h1 {
-      color: #e91e63;
-    }
-    nav {
-      text-align: center;
-      margin: 10px 0;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #e91e63;
     }
     section {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      background: white;
-      margin-bottom: 20px;
+      background: #fff;
       border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #222;
-    }
-    video {
-      width: 100%;
-      max-width: 100%;
-      margin-bottom: 15px;
+      font-size: 24px;
+      margin-top: 0;
     }
     img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px;
+      max-width: 150px;
+      margin: 10px;
       border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .thumbs img {
-      width: 100px;
-      margin-right: 10px;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-    .thumbs {
+    .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logotip.png" alt="Логотип" width="200">
+  </header>
 
-<header>
-  <img src="logotip.png" alt="Логотип">
-  <h1>#ПолинаLive</h1>
-  <p>Полина поёт, танцует и вдохновляет!</p>
-  <nav>
-    <a href="#vocal">Вокал</a>
-    <a href="#dance">Танцы</a>
-    <a href="#diplomas">Дипломы</a>
-    <a href="#photos">Фото</a>
-    <a href="#about">О себе</a>
-  </nav>
-</header>
+  <section>
+    <h2>🏆 Дипломы</h2>
+    <p>Награды Полины за творчество:</p>
+    <div class="gallery">
+      <a href="diplom4.jpg" target="_blank"><img src="diplom4.jpg" alt="Диплом 4"></a>
+      <a href="diplom5.jpg" target="_blank"><img src="diplom5.jpg" alt="Диплом 5"></a>
+      <a href="diplom6.jpg" target="_blank"><img src="diplom6.jpg" alt="Диплом 6"></a>
+      <a href="diplom8.jpg" target="_blank"><img src="diplom8.jpg" alt="Диплом 8"></a>
+      <a href="diplom9.jpg" target="_blank"><img src="diplom9.jpg" alt="Диплом 9"></a>
+      <a href="diplom10.jpg" target="_blank"><img src="diplom10.jpg" alt="Диплом 10"></a>
+    </div>
+  </section>
 
-<section id="vocal">
-  <h2>🎤 Вокал</h2>
-  <p>Выступление на конкурсе в Озёры</p>
-  <video controls src="polina.mp4"></video>
-  <p>Выступление в Абхазии</p>
-  <video controls src="polina2.mp4"></video>
-</section>
+  <section>
+    <h2>📷 Фото</h2>
+    <div class="gallery">
+      <a href="photo.jpg" target="_blank"><img src="photo.jpg" alt="Фото"></a>
+      <a href="photo1.jpg" target="_blank"><img src="photo1.jpg" alt="Фото 1"></a>
+      <a href="photo4.png" target="_blank"><img src="photo4.png" alt="Фото 4"></a>
+      <a href="photo5.jpg" target="_blank"><img src="photo5.jpg" alt="Фото 5"></a>
+      <a href="photo6.jpg" target="_blank"><img src="photo6.jpg" alt="Фото 6"></a>
+      <a href="photo7.jpeg" target="_blank"><img src="photo7.jpeg" alt="Фото 7"></a>
+      <a href="photo8.jpg" target="_blank"><img src="photo8.jpg" alt="Фото 8"></a>
+      <a href="photo9.jpg" target="_blank"><img src="photo9.jpg" alt="Фото 9"></a>
+    </div>
+  </section>
 
-<section id="dance">
-  <h2>💃 Танцы</h2>
-  <video controls src="polina3.mp4"></video>
-  <video controls src="polina4.mp4"></video>
-</section>
-
-<section id="diplomas">
-  <h2>🏆 Дипломы</h2>
-  <p>Награды Полины за творчество:</p>
-  <div class="thumbs">
-    <a href="diplom.jpg"><img src="diplom.jpg" alt="Диплом 1"></a>
-    <a href="diplom2.jpg"><img src="diplom2.jpg" alt="Диплом 2"></a>
-    <a href="diplom3.jpg"><img src="diplom3.jpg" alt="Диплом 3"></a>
-    <a href="diplom4.jpg"><img src="diplom4.jpg" alt="Диплом 4"></a>
-    <a href="diplom5.jpg"><img src="diplom5.jpg" alt="Диплом 5"></a>
-    <a href="diplom6.jpg"><img src="diplom6.jpg" alt="Диплом 6"></a>
-    <a href="diplom7.jpg"><img src="diplom7.jpg" alt="Диплом 7"></a>
-    <a href="diplom8.jpg"><img src="diplom8.jpg" alt="Диплом 8"></a>
-    <a href="diplom10.jpg"><img src="diplom10.jpg" alt="Диплом 10"></a>
-  </div>
-</section>
-
-<section id="photos">
-  <h2>📸 Фото</h2>
-  <div class="thumbs">
-    <a href="photo.jpg"><img src="photo.jpg" alt="Фото 1"></a>
-    <a href="photo4.png"><img src="photo4.png" alt="Фото 4"></a>
-    <a href="photo5.jpg"><img src="photo5.jpg" alt="Фото 5"></a>
-    <a href="photo6.jpg"><img src="photo6.jpg" alt="Фото 6"></a>
-    <a href="photo7.jpeg"><img src="photo7.jpeg" alt="Фото 7"></a>
-    <a href="photo8.jpg"><img src="photo8.jpg" alt="Фото 8"></a>
-    <a href="photo9.jpg"><img src="photo9.jpg" alt="Фото 9"></a>
-  </div>
-</section>
-
-<section id="about">
-  <h2>👧 О себе</h2>
-  <p>Скоро здесь появится информация о Полине.</p>
-</section>
-
+  <section>
+    <h2>🙊 О себе</h2>
+    <p>Скоро здесь появится информация о Полине.</p>
+  </section>
 </body>
 </html>
